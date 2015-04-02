@@ -1,0 +1,18 @@
+<p>
+  <strong>Visitor</strong>
+  <%= @match.visitor %>
+</p>
+
+<p>
+  Score
+  <%= @match.visitor_points %> - 
+  <%= @match.home_points %>
+</p>
+
+<p>
+  <strong>Home</strong>
+  <%= @match.home %>
+</p>
+
+<%= link_to 'Back', matches_path %>
+<%= link_to 'Edit', edit_match_path(@match) %>
