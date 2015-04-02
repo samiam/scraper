@@ -55,5 +55,5 @@ Rails.application.routes.draw do
   #   end
 
   resources :matches
-  root 'matches#intro'
+  root 'welcome#intro'
 end
