@@ -20,7 +20,7 @@
   </p>
   <p>
     <%= f.label "Visitor Points" %>
-    <%= f.text_field :visitor_points, :size => 3 %>
+    <%= f.number_field :visitor_points, :min => 0 %>
   </p>
   <p>
     <%= f.label "Home Name" %>
@@ -28,11 +28,11 @@
   </p>
   <p>
     <%= f.label "Home Points" %>
-    <%= f.text_field :home_points, :size => 3 %>
+    <%= f.number_field :home_points, :min => 0 %>
   </p>
   <p>
     <%= f.label "Date" %>
-    <%= f.text_field :date %>
+    <%= f.date_field :date %>
   </p>
  
   <p>
