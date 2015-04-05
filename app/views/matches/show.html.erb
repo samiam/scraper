@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>Visitor</th>
+    <th>Score</th>
+    <th>Home</th>
+    <th>Date</th>
+  </tr>
+
+  <tr>
+    <td><%= @match.visitor %></td>
+    <td><%= @match.score %></td>
+    <td><%= @match.home %></td>
+    <td><%= @match.event_time %></td>
+  </tr>
+</table>
+
+<p>
+<%= link_to 'Back', matches_path %>
+<%= link_to 'Edit', edit_match_path(@match) %>

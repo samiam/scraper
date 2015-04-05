@@ -1,0 +1,42 @@
+<%= form_for @match do |f| %>
+ 
+  <% if @match.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@match.errors.count, "error") %>
+	    prohibited this match from being saved:
+      </h2>
+      <ul>
+        <% @match.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <p>
+    <%= f.label "Visitor Name" %>
+    <%= f.text_field :visitor %>
+  </p>
+  <p>
+    <%= f.label "Visitor Points" %>
+    <%= f.number_field :visitor_points, :min => 0 %>
+  </p>
+  <p>
+    <%= f.label "Home Name" %>
+    <%= f.text_field :home %>
+  </p>
+  <p>
+    <%= f.label "Home Points" %>
+    <%= f.number_field :home_points, :min => 0 %>
+  </p>
+  <p>
+    <%= f.label "Date" %>
+    <%= f.date_field :date %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+ 
+<% end %>
