@@ -10,6 +10,7 @@ interface.
 ### Getting Started
 
 *   Checkout the code: git clone https://github.com/samiam/scraper.git
+*   Create database:  rake db:migrate
 *   Seed the database: rake db:seed
 *   Start Rails: bin/rails server
 *   Visit [http://localhost:3000/matches](http://localhost:3000/matches)
