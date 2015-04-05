@@ -32,8 +32,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# DateTime validation
-gem 'jc-validates_timeliness'
+# Local additions for scraper
+gem 'jc-validates_timeliness'     # DateTime validation
+gem 'mechanize'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
