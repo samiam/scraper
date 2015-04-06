@@ -11,10 +11,10 @@ interface.
 
 *   Checkout the code: git clone https://github.com/samiam/scraper.git
 *   Install gems:  bundle install
-*   Create the database:  rake db:migrate
-*   Seed the database: rake db:seed
+*   Run Postgres db:  postgres -D /usr/local/var/postgres
+*   Create and seed the database:  rake db:setup
 *   Start Rails: bin/rails server
-*   Visit [http://localhost:3000/matches](http://localhost:3000/matches)
+*   Visit the [matches](http://localhost:3000/matches) page
 *   Enjoy the scores!
 
 
