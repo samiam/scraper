@@ -1,7 +1,7 @@
 class MatchesController < ApplicationController
 
   def index
-    @matches = Match.all
+    @matches = Match.all.order(date: :desc)
   end
 
   def show
