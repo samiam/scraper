@@ -5,23 +5,23 @@ latest MLS soccer scores.
 
 <p>
 
-These scores will be stored in the database and then can be viewed by
-the client.  The client can interact with the data via a REST interface.
-
-<p>
+To get started review the
+<a href=https://github.com/samiam/scraper/>README.</a>
 
 <h3>Getting Started</h3>
 
 <ul>
   <li> Checkout the code: git clone https://github.com/samiam/scraper.git
   <p>
-  <li> Create the database: rake db:migrate
+  <li> Install gems:  bundle install
   <p>
-  <li> Seed the database: rake db:seed
+  <li> Run Postgres db:  postgres -D /usr/local/var/postgres
+  <p>
+  <li> Create and seed the database: rake db:setup
   <p>
   <li> Start Rails: bin/rails server
   <p>
-  <li> Visit <a href="http://localhost:3000/matches">http://localhost:3000/matches</a>
+  <li> Vist the <a href="<%= matches_path %>">matches</a> page
   <p>
   <li> Enjoy the scores!
 </ul>
